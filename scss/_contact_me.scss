@@ -1,0 +1,77 @@
+.contact-me{
+  padding-top:24px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  .contact-div{
+    display:flex;
+    justify-content: space-between;
+    h1{
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+     .contact-left{
+      &>*{
+        margin-bottom: 8px;
+      }
+      p {
+        i{
+          margin-right: 8px;
+          font-size: 16px;
+        }
+      }
+      p:nth-of-type(2) i{
+        font-size: 19px;
+      }
+
+      .social-media{
+        display:flex;
+        margin-top:16px;
+        a{
+          margin-right:16px;
+          // transition:0.5s;
+          i{
+            font-size: 24px;
+            transition: 0.4s;
+            // margin-right:16px;
+            &:hover{
+              color:$main;
+              transform: translateY(-2px);
+            }
+          }
+          // &:hover{
+          // transform: translateY(-2px);
+          // // color:$main;
+          // }
+        }
+
+      }
+
+    }
+    .contact-right{
+      flex-basis: 55%;
+      form{
+        input, textarea{
+          width:100%;
+          border:0;
+          outline: none;
+          background: #262626;
+          padding:16px;
+          margin: 8px 0;
+        }
+        button{
+          margin-top:0;
+          border:0;
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}
+
+
+// footer css here
+footer{
+  background: #262626;
+  padding: 12px;
+  text-align: center;
+}
