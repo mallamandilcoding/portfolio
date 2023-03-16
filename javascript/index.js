@@ -71,3 +71,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdE
         form.reset();
       })
   });
+
+
+
+  // navbar close and bar
+  const bar = document.querySelector('.bars');
+  const rightnav = document.querySelector('.right-nav');
+  const close = document.querySelector('.close');
+  bar.addEventListener('click',()=>{
+    rightnav.style.right = "0";
+  })
+  close.addEventListener('click',()=>{
+    rightnav.style.right = "-105%";
+  })

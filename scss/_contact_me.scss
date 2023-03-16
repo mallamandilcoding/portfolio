@@ -68,6 +68,13 @@
   }
 }
 
+.download-links{
+  display: flex;
+  gap:16px;
+  i{
+    margin-right:4px;
+  }
+}
 
 // footer css here
 footer{

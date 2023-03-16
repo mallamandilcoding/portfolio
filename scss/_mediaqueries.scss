@@ -1,0 +1,144 @@
+@media (max-width:1200px){
+  // ======= home ==========
+  .home .home-img-div .home-content{
+    .text-1{
+      font-size:18px;
+    }
+    .text-2{
+      font-size:32px;
+    }
+    .text-3{
+      font-size:24px;
+    }
+  }
+
+  //======== about ===========
+  .about .about-content{
+    height:620px;
+  }
+}
+
+@media (max-width:1024px){
+  // ====== about =====
+  .about .about-content{
+    height: 680px;
+  }
+  .about .about-content .right-about{
+    flex:1;
+  }
+}
+
+@media (max-width:1000px){
+  // ===== project section ======
+  .projects .links{
+    display:block;
+  }
+  .work-card .layer a{
+    display:block;
+  }
+}
+
+@media (max-width:880px){
+  // ======about ======
+  .about .about-content{
+    display:block;
+    height: auto;
+  }
+}
+
+@media (max-width:768px){
+
+  //---------- navbar -----------
+  nav .navbar .bars{
+    display:inline-block;
+  }
+  nav .navbar .right-nav .close{
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  nav .navbar .right-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: -105%;
+    top: 0;
+    /* gap: 32px; */
+    width: 50%;
+    height: 100vh;
+    background: $main;
+    align-items: center;
+    padding-top:40px;
+    transition: 0.5s;
+    a{
+      border-bottom: 1px solid $text;
+      /* display: block; */
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      margin-right:0;
+    }
+  }
+
+  //===== project section =====
+  .work-list{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  // =====contact section ====
+  .contact-me .contact-div{
+    display: block;
+    text-align: center;
+  }
+  .contact-left{
+    margin-bottom: 24px;
+  }
+  .contact-me .contact-div .contact-left .social-media{
+    justify-content: center;
+  }
+  .download-links{
+    justify-content: center;
+  }
+  .contact-me .contact-div .contact-right form button{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+  }
+}
+
+
+@media (max-width:480px){
+  //============= navbar ==========
+  nav .navbar .left-nav a{
+    font-size: 24px;
+  }
+  nav .navbar .right-nav a {
+    font-size: 16px;
+    padding: 16px;
+  }
+  nav.sticky{
+    padding:4px;
+  }
+
+  //=====about section =====
+  .about .about-content .right-about .tab-titles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .about .about-content .right-about .tab-content .content{
+    margin-top: 24px;
+  }
+  .about .about-content .right-about .tab-titles .title.active::after{
+    width:20%;
+  }
+
+  //====== project section ====
+  .work-list{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
