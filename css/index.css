@@ -69,8 +69,8 @@ nav.sticky .right-nav a::after {
 }
 
 .home {
-  background: #03080f;
   height: 100vh;
+  position: relative;
 }
 .home .home-img-div {
   display: flex;
@@ -89,6 +89,18 @@ nav.sticky .right-nav a::after {
 }
 .home .home-img-div .home-content .text-3 span {
   font-weight: 500;
+}
+.home::before {
+  content: "";
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  background-position: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
 }
 
 .about {
@@ -346,6 +358,9 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .home::before {
+    background-position: 76% 0;
+  }
   .home .home-img-div .home-content .text-1 {
     font-size: 18px;
   }
@@ -376,9 +391,21 @@ footer {
   }
 }
 @media (max-width: 880px) {
+  .home::before {
+    background-position: 69% 0;
+  }
   .about .about-content {
     display: block;
     height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .home::before {
+    background-position: 100%;
+    opacity: 0.1;
+  }
+  .home .home-img-div {
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -436,6 +463,21 @@ footer {
     width: 50%;
   }
 }
+@media (max-width: 660px) {
+  .home::before {
+    background-position: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .home::before {
+    background-position: 90%;
+  }
+}
+@media (max-width: 540px) {
+  .home::before {
+    background-position: 85%;
+  }
+}
 @media (max-width: 480px) {
   nav .navbar .left-nav a {
     font-size: 24px;
@@ -446,6 +488,9 @@ footer {
   }
   nav.sticky {
     padding: 4px;
+  }
+  .home::before {
+    background-position: 82%;
   }
   .about .about-content .right-about .tab-titles {
     display: grid;

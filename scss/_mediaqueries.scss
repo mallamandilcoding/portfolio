@@ -1,5 +1,10 @@
 @media (max-width:1200px){
   // ======= home ==========
+
+  .home::before{
+    background-position: 76% 0;
+  }
+
   .home .home-img-div .home-content{
     .text-1{
       font-size:18px;
@@ -10,6 +15,7 @@
     .text-3{
       font-size:24px;
     }
+
   }
 
   //======== about ===========
@@ -39,10 +45,25 @@
 }
 
 @media (max-width:880px){
+  //===== home =====
+  .home::before{
+    background-position: 69% 0;
+  }
+
   // ======about ======
   .about .about-content{
     display:block;
     height: auto;
+  }
+}
+
+@media (max-width:800px){
+  .home::before{
+    background-position: 100%;
+    opacity:0.1;
+  }
+  .home .home-img-div{
+    justify-content: center;
   }
 }
 
@@ -109,6 +130,25 @@
   }
 }
 
+@media (max-width:660px){
+  // === home ====
+  .home::before{
+    background-position: 95%;
+  }
+}
+@media (max-width:600px){
+  // === home ====
+  .home::before{
+    background-position: 90%;
+  }
+}
+
+@media (max-width:540px){
+  // === home ====
+  .home::before{
+    background-position: 85%;
+  }
+}
 
 @media (max-width:480px){
   //============= navbar ==========
@@ -121,6 +161,11 @@
   }
   nav.sticky{
     padding:4px;
+  }
+
+  // === home section ====
+  .home::before{
+    background-position: 82%;
   }
 
   //=====about section =====

@@ -1,8 +1,12 @@
 .home{
-  background: $bg;
+  // background: $bg;
   height: 100vh;
+  // background-image: url(../images/banner.png);
+  // background-size: cover;
+  // background-position: 100% 0%;
   // margin-bottom: px;
   // display:flex;
+  position: relative;
   .home-img-div{
     display: flex;
     height: 100%;
@@ -37,6 +41,20 @@
     //     object-fit: cover;
     //   }
     // }
+  }
+
+
+  &::before{
+    content: "";
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
   }
 
 }
