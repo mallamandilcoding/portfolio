@@ -402,7 +402,7 @@ footer {
 @media (max-width: 800px) {
   .home::before {
     background-position: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   .home .home-img-div {
     justify-content: center;
