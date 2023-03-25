@@ -7,7 +7,7 @@
     gap:24px;
     justify-content: space-between;
     // align-items: stretch;
-    height: 600px;
+    height: 450px;
     .left-about{
       flex:1;
       // height: 500px;
@@ -52,6 +52,7 @@
       }
       .tab-content{
         margin-top: 16px;
+
         .content{
           display:none;
           ul{
@@ -99,6 +100,9 @@
               &.javascript::after{
                 width:60%;
               }
+              &.react::after{
+                width:30%;
+              }
               &.sql::after{
                 width:70%;
               }
@@ -110,6 +114,17 @@
 
         }
       }
+
+
     }
   }
+}
+
+#Skills .skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    span.icon{
+      margin-right:4px;
+    }
 }

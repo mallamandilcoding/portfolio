@@ -20,17 +20,17 @@
 
   //======== about ===========
   .about .about-content{
-    height:620px;
+    height:500px;
   }
 }
 
 @media (max-width:1024px){
   // ====== about =====
   .about .about-content{
-    height: 680px;
+    // height: 600px;
   }
   .about .about-content .right-about{
-    flex:1;
+    flex:2;
   }
 }
 
@@ -179,6 +179,9 @@
   }
   .about .about-content .right-about .tab-titles .title.active::after{
     width:20%;
+  }
+  #Skills .skill-grid{
+    grid-template-columns: 1fr;
   }
 
   //====== project section ====
