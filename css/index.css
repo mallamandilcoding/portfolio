@@ -112,7 +112,7 @@ nav.sticky .right-nav a::after {
   display: flex;
   gap: 24px;
   justify-content: space-between;
-  height: 600px;
+  height: 450px;
 }
 .about .about-content .left-about {
   flex: 1;
@@ -204,11 +204,23 @@ nav.sticky .right-nav a::after {
 .about .about-content .right-about .tab-content .content .bars .line.javascript::after {
   width: 60%;
 }
+.about .about-content .right-about .tab-content .content .bars .line.react::after {
+  width: 30%;
+}
 .about .about-content .right-about .tab-content .content .bars .line.sql::after {
   width: 70%;
 }
 .about .about-content .right-about .tab-content .content .bars .line.git::after {
   width: 50%;
+}
+
+#Skills .skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+#Skills .skill-grid span.icon {
+  margin-right: 4px;
 }
 
 .projects {
@@ -371,15 +383,12 @@ footer {
     font-size: 24px;
   }
   .about .about-content {
-    height: 620px;
+    height: 500px;
   }
 }
 @media (max-width: 1024px) {
-  .about .about-content {
-    height: 680px;
-  }
   .about .about-content .right-about {
-    flex: 1;
+    flex: 2;
   }
 }
 @media (max-width: 1000px) {
@@ -502,6 +511,9 @@ footer {
   }
   .about .about-content .right-about .tab-titles .title.active::after {
     width: 20%;
+  }
+  #Skills .skill-grid {
+    grid-template-columns: 1fr;
   }
   .work-list {
     grid-template-columns: 1fr;

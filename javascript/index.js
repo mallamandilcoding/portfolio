@@ -77,6 +77,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdE
   // navbar close and bar
   const bar = document.querySelector('.bars');
   const rightnav = document.querySelector('.right-nav');
+  const rightnav_a = document.querySelectorAll('.right-nav a');
   const close = document.querySelector('.close');
   bar.addEventListener('click',()=>{
     rightnav.style.right = "0";
@@ -84,3 +85,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdE
   close.addEventListener('click',()=>{
     rightnav.style.right = "-105%";
   })
+
+  rightnav_a.forEach((item)=>{
+    item.addEventListener('click',()=>{
+      rightnav.style.right = "-105%";
+    });
+  });
