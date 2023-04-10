@@ -95,3 +95,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdE
       rightnav.style.right = "-105%";
     });
   });
+
+
+// const langChange = document.querySelector('.language');
+// langChange.addEventListener('click',(e)=>{
+
+//   e.target.setAttribute('data-lang','jp');
+//   const lang= e.target.getAttribute('data-lang');
+//   alert(lang)
+//   lang === 'jp' ? window.location.href="?lng=jp" : window.location.href="?lng=en";
+
+
+
+// })
