@@ -1,0 +1,27 @@
+{
+  "Home": "ホーム",
+  "About" : "私の事",
+  "Projects": "プロジェクト",
+  "Contact": "連絡",
+  "Hi, It's me" : "こんにちは。",
+  "Mandil Malla": "マッラマンディルです。",
+  "And I'm a": "",
+  "About Me": "私について",
+  "I am a highly motivated full stack developer with a passion for building innovative and user-friendly\napplications. With a deep understanding of programming languages like HTML,CSS,JAVASCRIPT,RUBY,PHP etc i\nam always eager to take on new challenges and expand my skill set. I am always commited to delivering\nhigh-quality solutions that meet my team expectations.": "私は、革新的でユーザーフレンドリーなアプリケーションを構築することに情熱を持つ、高いモチベーションを持ったフルスタック開発者です。HTML、CSS、JavaScript、Ruby、PHPなどのプログラミング言語に深い理解を持ち、常に新しい挑戦を受け入れ、自分のスキルセットを拡大することを熱望しています。私は常に、チームの期待に応える高品質なソリューションを提供することに取り組んでいます。",
+  "Skills": "スキル",
+  "Education": "教育",
+  "Certifications": "資格",
+  "Languages": "言語",
+  "Bachelor in Computer Engineering from ACEM Nepal": "コンピューター工学 大学、ACEM ネパール",
+  "Web Development from Le Wagon Japan": "ウェブ開発、Le Wagon　日本",
+  "Front End Development from HD Nepal": "フロントエンド開発、HD　ネパール",
+  "English": "英語",
+  "Business Level": "ビジネスレブル",
+  "Japanese": "日本語",
+  "N3 Level": "N3 レブル",
+  "Nepali": "ネパール語",
+  "Native Level": "自国語",
+  "Hindi": "インド語",
+  "Conversational Level": "日常会話"
+
+}

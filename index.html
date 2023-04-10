@@ -17,7 +17,7 @@
 <nav class="navi">
   <div class="container">
     <div class="navbar">
-      <div class="left-nav">
+      <div class="left-nav" translated>
         <a href="#"><span class="main-text">Man</span><span>dil<span class="main-text">.<span></span></a>
       </div>
       <div class="right-nav">
@@ -57,25 +57,25 @@
 <section class="about" id="about">
   <div class="container">
     <div class="about-content">
-      <div class="left-about" data-aos="fade-right">
+      <div class="left-about" data-aos="fade-right" translated>
         <img src="images/mandil.JPG" alt="mandil picture">
       </div>
       <div class="right-about" data-aos="fade-left">
         <h1>About Me</h1>
         <p class="about-me">
           I am a highly motivated full stack developer with a passion for building innovative and user-friendly
-          applications. With a deep understanding of programming languages like HTML,CSS,JAVASCRIPT,RUBY, etc i
+          applications. With a deep understanding of programming languages like HTML,CSS,JAVASCRIPT,RUBY,PHP etc i
           am always eager to take on new challenges and expand my skill set. I am always commited to delivering
           high-quality solutions that meet my team expectations.
         </p>
         <div class="tab-titles">
-          <div class="title active">Skills</div>
-          <div class="title">Education</div>
-          <div class="title">Certifications</div>
-          <div class="title">Languages</div>
+          <div class="title active" data-title="Skills">Skills</div>
+          <div class="title" data-title="Education">Education</div>
+          <div class="title" data-title="Certifications">Certifications</div>
+          <div class="title" data-title="Languages">Languages</div>
         </div>
         <div class="tab-content">
-          <div class="content active Skills" id="Skills">
+          <div class="content active Skills" id="Skills" translated>
             <div class="skill-grid">
               <div class="skill-div">
                 <span class="icon"><i class="fas fa-check-square main-text"></i></span>
@@ -357,6 +357,9 @@
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="javascript/index.js"></script>
+<script src="https://unpkg.com/i18nextify@^3.2.1" id="i18nextify" fallbacklng="en"></script>
+
+
 </body>
 
 </html>
