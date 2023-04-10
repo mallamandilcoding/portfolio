@@ -184,6 +184,11 @@
     grid-template-columns: 1fr;
   }
 
+  #Languages ul{
+    grid-template-columns: 1fr;
+    gap:4px;
+  }
+
   //====== project section ====
   .work-list{
     grid-template-columns: 1fr;

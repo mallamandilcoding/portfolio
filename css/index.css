@@ -162,9 +162,6 @@ nav.sticky .right-nav a::after {
 .about .about-content .right-about .tab-content .content ul {
   list-style: none;
 }
-.about .about-content .right-about .tab-content .content ul li {
-  margin-bottom: 16px;
-}
 .about .about-content .right-about .tab-content .content ul li span {
   font-size: 13px;
 }
@@ -221,6 +218,12 @@ nav.sticky .right-nav a::after {
 }
 #Skills .skill-grid span.icon {
   margin-right: 4px;
+}
+
+#Languages ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 
 .projects {
@@ -515,6 +518,10 @@ footer {
   #Skills .skill-grid {
     grid-template-columns: 1fr;
   }
+  #Languages ul {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
   .work-list {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -586,4 +593,24 @@ a {
 
 #msg {
   font-size: 12px;
+}
+
+.language {
+  cursor: pointer;
+  position: absolute;
+  top: 80px;
+  right: 8px;
+}
+.language a {
+  width: 32px;
+  height: 20px;
+  display: block;
+}
+.language a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.language a:first-of-type {
+  margin-bottom: 8px;
 }/*# sourceMappingURL=index.css.map */

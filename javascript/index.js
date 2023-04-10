@@ -23,13 +23,17 @@ var typed = new Typed(".typing", {
 //for active tabs in about section
 const tab = document.querySelector(".tab-titles");
 const tabcontent = document.querySelector(".tab-content");
+// console.log(tabcontent);
 tab.addEventListener("click",(e)=>{
-  // console.log(e.target);
+  console.log(e.target);
   // console.log(e.currentTarget);
-  const titles = e.currentTarget.querySelectorAll('.title');
+  // const titles = e.currentTarget.querySelectorAll('.title');
+  const titles = e.currentTarget.querySelectorAll('[data-title');
+  // console.log(titles);
   const contents = tabcontent.querySelectorAll('.content');
-  const tabname = e.target.innerText;
-  // console.log("." + tabname)
+  // const tabname = e.target.innerText;
+  const tabname = e.target.getAttribute('data-title');
+  console.log("." + tabname)
   for (let title of titles){
     title.classList.remove("active");
   }
@@ -91,3 +95,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyRwpiNpALmZRas-9afdE
       rightnav.style.right = "-105%";
     });
   });
+
+
+// const langChange = document.querySelector('.language');
+// langChange.addEventListener('click',(e)=>{
+
+//   e.target.setAttribute('data-lang','jp');
+//   const lang= e.target.getAttribute('data-lang');
+//   alert(lang)
+//   lang === 'jp' ? window.location.href="?lng=jp" : window.location.href="?lng=en";
+
+
+
+// })
