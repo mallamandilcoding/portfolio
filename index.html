@@ -343,11 +343,15 @@
         </div>
      </div>
       <div class="contact-right" data-aos="fade-left">
-        <form name="submit-to-google-sheet">
+        <!-- <form name="submit-to-google-sheet"> -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="44f3b4d5-35fb-4fa1-ad40-7d58ab07a2fc">
+          <!-- <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html"> -->
+          <input type="hidden" name="redirect" value="http://mandilmalla.freewebhostmost.com/">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-          <button class="btn">Submit</button>
+          <button class="btn" type="submit">Submit</button>
         </form>
         <span id="msg"></span>
       </div>
